@@ -1,0 +1,7 @@
+﻿  源.cpp
+源.cpp(83): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+源.cpp(102): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  正在生成代码
+  All 22 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  Win32Project2.vcxproj -> C:\Users\Rex\Desktop\Workspace\代码\0000000000\atm\atm程序\Release\Win32Project2.exe

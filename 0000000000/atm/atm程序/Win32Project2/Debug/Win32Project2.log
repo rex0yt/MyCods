@@ -1,0 +1,4 @@
+﻿  源.cpp
+c:\users\rex\desktop\win32project2\win32project2\源.cpp(83): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\rex\desktop\win32project2\win32project2\源.cpp(102): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  Win32Project2.vcxproj -> C:\Users\Rex\Desktop\Win32Project2\Debug\Win32Project2.exe
