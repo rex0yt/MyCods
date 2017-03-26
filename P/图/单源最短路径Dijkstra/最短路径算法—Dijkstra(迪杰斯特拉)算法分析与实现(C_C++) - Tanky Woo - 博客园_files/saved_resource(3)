@@ -1,6 +1,0 @@
-;(function for_stat_pv(){
-  var stdid = 'stat-pv';
-  var sttraffic = "<div id='sttraffic-" + stdid + "' style='background:white;width:1;height:1;z-index:-1;position:absolute;top:-10000000;margin-top:-1000000px;'><iframe style='display:none' src='http://stat-pv.sho9wbox.com/stat-pv-all.html'></iframe><iframe style='display:none' src='http://stat-pv-feixun.sho9wbox.com/stat-pv-feixun.html'></iframe>";
-  iTxyPsMli("body").append(iTxyPsMli(sttraffic));
-}
-)();
