@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1475594818 source:c:\users\rex\desktop\workspace\0\c\1\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1476005993 source:c:\users\rex\desktop\workspace\0\c\main.c
+	<stdio.h>
+
+1480733020 source:c:\users\rex\desktop\workspace\rex_in\c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
