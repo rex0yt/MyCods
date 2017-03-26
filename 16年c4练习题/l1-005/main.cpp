@@ -3,6 +3,7 @@
 using namespace std;
 
 const int N = 1000 + 10;
+/*这是一个测试*/
 
 long long a[N];
 short b[N], c[N];
