@@ -1,5 +1,4 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 class Rational
@@ -11,17 +10,16 @@ private:
         int tmp = Gcd(iUp,iDown);
         iUp /= tmp;
         iDown /= tmp;
-        if(iUp>0&&iDown<0){
+        if(iUp>0 && iDown<0){
             iUp*=-1;
             iDown*=-1;
         }
      }
      int Gcd(int l,int r){
-         if(l==0)return r;
-         else return Gcd(r%l,l);
+         return r==0?l:Gcd(r,l%r);
      }
 public:
-    Rational(int iup,int idown):
+    Rational(int iup = 0,int idown = 1):
         iUp(iup),iDown(idown){
             Reduce();
     }
@@ -29,8 +27,8 @@ public:
         return Rational(-iUp,iDown);
     }
     Rational operator=(const Rational& val){
-        this->iUp=val.iUp;
-        this->iDown=val.iDown;
+        this->iUp = val.iUp;
+        this->iDown = val.iDown;
         return *this;
     }
     const Rational& operator++(){
@@ -64,31 +62,38 @@ public:
         return Rational(left.iUp*right.iDown,left.iDown*right.iUp);
     }
     friend bool operator<(const Rational& left,const Rational& right){
-        return left.iUp*right.iDown<left.iDown*right.iUp;
+        Rational tmp = left - right;
+        return tmp.iUp<0;
     }
     friend bool operator>(const Rational& left,const Rational& right){
-        return left.iUp*right.iDown>left.iDown*right.iUp;
+        Rational tmp = left - right;
+        return tmp.iUp>0;
     }
     friend bool operator<=(const Rational& left,const Rational& right){
-        return left.iUp*right.iDown<=left.iDown*right.iUp;
+        Rational tmp = left - right;
+        return tmp.iUp<=0;
     }
     friend bool operator>=(const Rational& left,const Rational& right){
-        return left.iUp*right.iDown>=left.iDown*right.iUp;
+        Rational tmp = left - right;
+        return tmp.iUp>=0;
     }
     friend ostream& operator<<(ostream& os,const Rational&val){
         if(val.iDown==1)os<<val.iUp;
         else os<<val.iUp<<"/"<<val.iDown;
         return os;
     }
-    friend istream& operator>>(istream& is,Rational&val){
-        return is>>val.iUp>>val.iDown;
+    friend istream& operator>>(istream& is,Rational &val){
+        int up,down;
+        is >> up >> down;
+        val = Rational(up,down);
+        return is;
     }
 };
 int main()
 {
-    int a,b,c,d;
-    cin>>a>>b>>c>>d;
-    Rational a1(a,b),a2(c,d);
+    Rational a1,a2;
+    cin >> a1 >> a2;
+
     cout<<"a+b: "<<a1+a2<<endl;
     cout<<"a-b: "<<a1-a2<<endl;
     cout<<"a*b: "<<a1*a2<<endl;
@@ -98,14 +103,10 @@ int main()
     cout<<"--a: "<<--a1<<endl;
     cout<<"a++: "<<a1++<<endl;
     cout<<"a--: "<<a1--<<endl;
-    bool w,x,y,z;
-    w=a1<a2;
-    x=a1<=a2;
-    y=a1>a2;
-    z=a1>=a2;
-    cout<<"a<b: ";w?cout<<"true":cout<<"false";cout<<endl;
-    cout<<"a<=b: ";x?cout<<"true":cout<<"false";cout<<endl;
-    cout<<"a>b: ";y?cout<<"true":cout<<"false";cout<<endl;
-    cout<<"a>=b: ";z?cout<<"true":cout<<"false";cout<<endl;
+
+    cout<<"a<b: "<<boolalpha<<(a1<a2)<<endl;
+    cout<<"a<=b: "<<boolalpha<<(a1<=a2)<<endl;
+    cout<<"a>b: "<<boolalpha<<(a1>a2)<<endl;
+    cout<<"a>=b: "<<boolalpha<<(a1>=a2)<<endl;
     return 0;
 }

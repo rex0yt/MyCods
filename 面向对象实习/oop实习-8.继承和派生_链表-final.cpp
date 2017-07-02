@@ -116,23 +116,22 @@ int main()
 {
     LinkedQueue queue;
     LinkedStack stack;
-    string xx;
-    do
-    {
-        cin >> xx;
-        if(xx=="Push")
+    string type;
+    do{
+        cin >> type;
+        if(type=="Push")
         {
             StudentRecord tmp;
             cin>>tmp.stuName>>tmp.stuNo;
             stack.Push(tmp);
         }
-        else if(xx=="EnQueue")
+        else if(type=="EnQueue")
         {
             StudentRecord tmp;
             cin>>tmp.stuName>>tmp.stuNo;
             queue.EnQueue(tmp);
         }
-        else if(xx=="Pop")
+        else if(type=="Pop")
         {
             StudentRecord tmp;
             if(!stack.Pop(tmp))cout<<"Stack is empty!"<<endl;
@@ -141,7 +140,7 @@ int main()
                 tmp.print();
             }
         }
-        else if(xx=="DeQueue")
+        else if(type=="DeQueue")
         {
             StudentRecord tmp;
             if(!queue.DeQueue(tmp))cout<<"Queue is empty!"<<endl;
@@ -150,7 +149,7 @@ int main()
                 tmp.print();
             }
         }
-        else if(xx=="Exit")
+        else if(type=="Exit")
         {
             break;
         }
@@ -158,7 +157,6 @@ int main()
         {
             cout<<"Input error!"<<endl;
         }
-    }
-    while(1);
+    }while(1);
     return 0;
 }

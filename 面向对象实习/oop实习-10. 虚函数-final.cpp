@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 class Person
@@ -13,6 +12,7 @@ public:
     Person(string name)
     :szName(name){}
 };
+
 class Student:public Person
 {
 protected:
@@ -51,35 +51,34 @@ int main()
 {
     Person **arr;
     int n;
-    string tmp,xx,xxxx;
-    int xxx;
+    string type,name,research;
+    int num;
 
     cin >> n;
     arr = new Person* [n];
     for(int i=0; i<n; i++)
     {
-        cin >> tmp;
-        if(tmp=="Person"){
-            cin>>xx;
-            arr[i]=new Person(xx);
-        }else if(tmp=="Student"){
-            cin>>xx>>xxx;
-            arr[i]=new Student(xx,xxx);
-        }else if(tmp=="Graduate"){
-            cin>>xx>>xxx>>xxxx;
-            arr[i]=new Graduate(xx,xxx,xxxx);
-        }else if(tmp=="Teacher"){
-            cin>>xx>>xxx;
-            arr[i]=new Teacher(xx,xxx);
+        cin >> type;
+        if(type=="Person"){
+            cin>>name;
+            arr[i]=new Person(name);
+        }else if(type=="Student"){
+            cin>>name>>num;
+            arr[i]=new Student(name,num);
+        }else if(type=="Graduate"){
+            cin>>name>>num>>research;
+            arr[i]=new Graduate(name,num,research);
+        }else if(type=="Teacher"){
+            cin>>name>>num;
+            arr[i]=new Teacher(name,num);
         }
     }
+    string tmp;
     do{
-        cin>>xx;
-        if(xx=="exit")break;
-        stringstream stream;
-        stream<<xx;
-        stream>>xxx;
-        arr[xxx]->Print();
+        cin>>tmp;
+        if(tmp[0]=='e')break;
+        int index = tmp[0]-'0';
+        arr[index]->Print();
     }while(1);
     return 0;
 }

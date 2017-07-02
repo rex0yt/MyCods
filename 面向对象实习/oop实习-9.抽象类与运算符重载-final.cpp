@@ -1,8 +1,5 @@
-#include <iostream>
-#include <string>
-#include <cmath>
+#include <bits/stdc++.h>
 using namespace std;
-
 
 const double PI=3.1415926;
 
@@ -21,7 +18,7 @@ public:
 
 bool operator==(Shape &shLeft,Shape &shRight)
 {
-    return abs(shLeft.Area()-shRight.Area())<=1.0e-8;
+    return fabs(shLeft.Area()-shRight.Area())<=1.0e-8;
 }
 
 bool operator<(Shape &shLeft,Shape &shRight)
