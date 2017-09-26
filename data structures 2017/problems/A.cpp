@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 const int defaultSize=1000;
@@ -35,7 +35,6 @@ public:
             os<<left.data[i]<<" ";
         }
         os << left.data[left.last] << endl;
-//        os<<endl;
         return os;
     }
 };
@@ -197,7 +196,7 @@ int main()
     int n;
     SeqList<int> mylist;
 
-    cin >> n;//ÊäÈëË³Ğò±í
+    cin >> n;//è¾“å…¥é¡ºåºè¡¨
     for(int i=0; i<n; i++)
     {
         cin >> tmp;
@@ -205,37 +204,35 @@ int main()
     }
 //    cout << mylist;
 
-    cin >> tmp >> index;//²åÈëÒ»¸öÊı×Ö
+    cin >> tmp >> index;//æ’å…¥ä¸€ä¸ªæ•°å­—
     mylist.Insert(index, tmp);
     cout << mylist;
 
-    cin >> index;//É¾³ıÒ»¸öÊı×Ö
+    cin >> index;//åˆ é™¤ä¸€ä¸ªæ•°å­—
     if(mylist.Locate(index))
         mylist.Remove(index,tmp);
     cout << mylist;
 
-    cin >> tmp;//²éÕÒÒ»¸öÊı×Ö
+    cin >> tmp;//æŸ¥æ‰¾ä¸€ä¸ªæ•°å­—
     index = mylist.Search(tmp);
     if(index == 0)
         cout << "Not found" << endl;
     else
         cout << index<< endl;
 
-    mylist.Turn();//×ªÖÃ
+    mylist.Turn();//è½¬ç½®
     cout << mylist;
 
-    SeqList<int> newlist;//´´½¨ĞÂ±í
+    SeqList<int> newlist;//åˆ›å»ºæ–°è¡¨
     cin >> n;
     for(int i=0; i<n; i++)
     {
         cin >> tmp;
         newlist.Insert(i+1, tmp);
     }
-    mylist.Hebing(newlist);//ºÏ²¢²Ù×÷
+    mylist.Hebing(newlist);//åˆå¹¶æ“ä½œ
     cout << mylist;
     cout << endl;
 
     return 0;
 }
-
-
