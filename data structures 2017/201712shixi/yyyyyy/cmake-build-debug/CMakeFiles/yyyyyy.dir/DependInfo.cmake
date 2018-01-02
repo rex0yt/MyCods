@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/yt129/Desktop/yyyyyy/IO.cpp" "C:/Users/yt129/Desktop/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/IO.cpp.obj"
-  "C:/Users/yt129/Desktop/yyyyyy/Person.cpp" "C:/Users/yt129/Desktop/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/Person.cpp.obj"
-  "C:/Users/yt129/Desktop/yyyyyy/PersonInfocpp.cpp" "C:/Users/yt129/Desktop/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.obj"
-  "C:/Users/yt129/Desktop/yyyyyy/PersonNo.cpp" "C:/Users/yt129/Desktop/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/PersonNo.cpp.obj"
-  "C:/Users/yt129/Desktop/yyyyyy/Relation.cpp" "C:/Users/yt129/Desktop/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/Relation.cpp.obj"
-  "C:/Users/yt129/Desktop/yyyyyy/main.cpp" "C:/Users/yt129/Desktop/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/main.cpp.obj"
+  "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/IO.cpp" "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/IO.cpp.obj"
+  "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/Person.cpp" "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/Person.cpp.obj"
+  "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/PersonInfocpp.cpp" "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.obj"
+  "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/PersonNo.cpp" "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/PersonNo.cpp.obj"
+  "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/Relation.cpp" "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/Relation.cpp.obj"
+  "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/main.cpp" "D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

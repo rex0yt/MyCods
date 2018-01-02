@@ -5,6 +5,8 @@
 #include <QDialog>
 #include <QLabel>
 #include <QGridLayout>
+#include <QWidget>
+#include <QFont>
 
 #include "mainwindow.h"
 #include "dialogchaxunlianxiren.h"
@@ -16,11 +18,24 @@ MainWindow::MainWindow(QWidget *parent) :
   QMainWindow(parent)
 {
   setWindowTitle(tr("社交网络关系:"));
-  this->resize(600,400);
+  this->resize(400,300);
 
-  text1 = new QLabel(tr("社交网络关系操作系统"));
-  mainLayout = new QGridLayout(this);
-  mainLayout->addWidget(text1);
+  thisWiget = new QWidget(this);
+  setCentralWidget(thisWiget);
+
+  text1 = new QLabel(thisWiget);
+  text1->setText(tr("社交网络关系操作系统\n"));
+  text1->setFont(QFont("Arial", 30, QFont::Black));
+  text2 = new QLabel(thisWiget);
+  text2->setText("\t作者：殷童-陈越-侯君瑶");
+  text2->setFont(QFont("Arial", 18, QFont::Black));
+  text3 = new QLabel(thisWiget);
+  text3->setText("\t时间：2017年12月31日");
+  text3->setFont(QFont("Arial", 18, QFont::Black));
+  mainLayout = new QGridLayout(thisWiget);
+  mainLayout->addWidget(text1,0,0);
+  mainLayout->addWidget(text2,1,0);
+  mainLayout->addWidget(text3,2,0);
 
   createAction();
 }

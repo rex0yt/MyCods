@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QLabel>
 #include <QLayout>
+#include <QWidget>
 
 class MainWindow : public QMainWindow
 {
@@ -28,7 +29,10 @@ private:
     QAction *LianXiXiugaiAction;
 
     //
+    QWidget *thisWiget;
     QLabel *text1;
+    QLabel *text2;
+    QLabel *text3;
     QGridLayout *mainLayout;
 };
 

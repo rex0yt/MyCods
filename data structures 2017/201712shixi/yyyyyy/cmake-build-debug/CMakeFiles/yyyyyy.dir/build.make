@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\yt129\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\173.4127.32\bin\cmake\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\Rex\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\173.4127.32\bin\cmake\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\yt129\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\173.4127.32\bin\cmake\bin\cmake.exe -E remove -f
+RM = C:\Users\Rex\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\173.4127.32\bin\cmake\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\yt129\Desktop\yyyyyy
+CMAKE_SOURCE_DIR = "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\yt129\Desktop\yyyyyy\cmake-build-debug
+CMAKE_BINARY_DIR = "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/yyyyyy.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/yyyyyy.dir/flags.make
 
 CMakeFiles/yyyyyy.dir/IO.cpp.obj: CMakeFiles/yyyyyy.dir/flags.make
 CMakeFiles/yyyyyy.dir/IO.cpp.obj: ../IO.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\yt129\Desktop\yyyyyy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/yyyyyy.dir/IO.cpp.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\IO.cpp.obj -c C:\Users\yt129\Desktop\yyyyyy\IO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/yyyyyy.dir/IO.cpp.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\IO.cpp.obj -c "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\IO.cpp"
 
 CMakeFiles/yyyyyy.dir/IO.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yyyyyy.dir/IO.cpp.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\yt129\Desktop\yyyyyy\IO.cpp > CMakeFiles\yyyyyy.dir\IO.cpp.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\IO.cpp" > CMakeFiles\yyyyyy.dir\IO.cpp.i
 
 CMakeFiles/yyyyyy.dir/IO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yyyyyy.dir/IO.cpp.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yt129\Desktop\yyyyyy\IO.cpp -o CMakeFiles\yyyyyy.dir\IO.cpp.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\IO.cpp" -o CMakeFiles\yyyyyy.dir\IO.cpp.s
 
 CMakeFiles/yyyyyy.dir/IO.cpp.obj.requires:
 
@@ -82,16 +82,16 @@ CMakeFiles/yyyyyy.dir/IO.cpp.obj.provides.build: CMakeFiles/yyyyyy.dir/IO.cpp.ob
 
 CMakeFiles/yyyyyy.dir/main.cpp.obj: CMakeFiles/yyyyyy.dir/flags.make
 CMakeFiles/yyyyyy.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\yt129\Desktop\yyyyyy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/yyyyyy.dir/main.cpp.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\main.cpp.obj -c C:\Users\yt129\Desktop\yyyyyy\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/yyyyyy.dir/main.cpp.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\main.cpp.obj -c "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\main.cpp"
 
 CMakeFiles/yyyyyy.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yyyyyy.dir/main.cpp.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\yt129\Desktop\yyyyyy\main.cpp > CMakeFiles\yyyyyy.dir\main.cpp.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\main.cpp" > CMakeFiles\yyyyyy.dir\main.cpp.i
 
 CMakeFiles/yyyyyy.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yyyyyy.dir/main.cpp.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yt129\Desktop\yyyyyy\main.cpp -o CMakeFiles\yyyyyy.dir\main.cpp.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\main.cpp" -o CMakeFiles\yyyyyy.dir\main.cpp.s
 
 CMakeFiles/yyyyyy.dir/main.cpp.obj.requires:
 
@@ -106,16 +106,16 @@ CMakeFiles/yyyyyy.dir/main.cpp.obj.provides.build: CMakeFiles/yyyyyy.dir/main.cp
 
 CMakeFiles/yyyyyy.dir/Person.cpp.obj: CMakeFiles/yyyyyy.dir/flags.make
 CMakeFiles/yyyyyy.dir/Person.cpp.obj: ../Person.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\yt129\Desktop\yyyyyy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yyyyyy.dir/Person.cpp.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\Person.cpp.obj -c C:\Users\yt129\Desktop\yyyyyy\Person.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yyyyyy.dir/Person.cpp.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\Person.cpp.obj -c "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\Person.cpp"
 
 CMakeFiles/yyyyyy.dir/Person.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yyyyyy.dir/Person.cpp.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\yt129\Desktop\yyyyyy\Person.cpp > CMakeFiles\yyyyyy.dir\Person.cpp.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\Person.cpp" > CMakeFiles\yyyyyy.dir\Person.cpp.i
 
 CMakeFiles/yyyyyy.dir/Person.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yyyyyy.dir/Person.cpp.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yt129\Desktop\yyyyyy\Person.cpp -o CMakeFiles\yyyyyy.dir\Person.cpp.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\Person.cpp" -o CMakeFiles\yyyyyy.dir\Person.cpp.s
 
 CMakeFiles/yyyyyy.dir/Person.cpp.obj.requires:
 
@@ -130,16 +130,16 @@ CMakeFiles/yyyyyy.dir/Person.cpp.obj.provides.build: CMakeFiles/yyyyyy.dir/Perso
 
 CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.obj: CMakeFiles/yyyyyy.dir/flags.make
 CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.obj: ../PersonInfocpp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\yt129\Desktop\yyyyyy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\PersonInfocpp.cpp.obj -c C:\Users\yt129\Desktop\yyyyyy\PersonInfocpp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\PersonInfocpp.cpp.obj -c "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\PersonInfocpp.cpp"
 
 CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\yt129\Desktop\yyyyyy\PersonInfocpp.cpp > CMakeFiles\yyyyyy.dir\PersonInfocpp.cpp.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\PersonInfocpp.cpp" > CMakeFiles\yyyyyy.dir\PersonInfocpp.cpp.i
 
 CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yt129\Desktop\yyyyyy\PersonInfocpp.cpp -o CMakeFiles\yyyyyy.dir\PersonInfocpp.cpp.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\PersonInfocpp.cpp" -o CMakeFiles\yyyyyy.dir\PersonInfocpp.cpp.s
 
 CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.obj.requires:
 
@@ -154,16 +154,16 @@ CMakeFiles/yyyyyy.dir/PersonInfocpp.cpp.obj.provides.build: CMakeFiles/yyyyyy.di
 
 CMakeFiles/yyyyyy.dir/PersonNo.cpp.obj: CMakeFiles/yyyyyy.dir/flags.make
 CMakeFiles/yyyyyy.dir/PersonNo.cpp.obj: ../PersonNo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\yt129\Desktop\yyyyyy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/yyyyyy.dir/PersonNo.cpp.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\PersonNo.cpp.obj -c C:\Users\yt129\Desktop\yyyyyy\PersonNo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/yyyyyy.dir/PersonNo.cpp.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\PersonNo.cpp.obj -c "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\PersonNo.cpp"
 
 CMakeFiles/yyyyyy.dir/PersonNo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yyyyyy.dir/PersonNo.cpp.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\yt129\Desktop\yyyyyy\PersonNo.cpp > CMakeFiles\yyyyyy.dir\PersonNo.cpp.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\PersonNo.cpp" > CMakeFiles\yyyyyy.dir\PersonNo.cpp.i
 
 CMakeFiles/yyyyyy.dir/PersonNo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yyyyyy.dir/PersonNo.cpp.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yt129\Desktop\yyyyyy\PersonNo.cpp -o CMakeFiles\yyyyyy.dir\PersonNo.cpp.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\PersonNo.cpp" -o CMakeFiles\yyyyyy.dir\PersonNo.cpp.s
 
 CMakeFiles/yyyyyy.dir/PersonNo.cpp.obj.requires:
 
@@ -178,16 +178,16 @@ CMakeFiles/yyyyyy.dir/PersonNo.cpp.obj.provides.build: CMakeFiles/yyyyyy.dir/Per
 
 CMakeFiles/yyyyyy.dir/Relation.cpp.obj: CMakeFiles/yyyyyy.dir/flags.make
 CMakeFiles/yyyyyy.dir/Relation.cpp.obj: ../Relation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\yt129\Desktop\yyyyyy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/yyyyyy.dir/Relation.cpp.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\Relation.cpp.obj -c C:\Users\yt129\Desktop\yyyyyy\Relation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/yyyyyy.dir/Relation.cpp.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\yyyyyy.dir\Relation.cpp.obj -c "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\Relation.cpp"
 
 CMakeFiles/yyyyyy.dir/Relation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yyyyyy.dir/Relation.cpp.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\yt129\Desktop\yyyyyy\Relation.cpp > CMakeFiles\yyyyyy.dir\Relation.cpp.i
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\Relation.cpp" > CMakeFiles\yyyyyy.dir\Relation.cpp.i
 
 CMakeFiles/yyyyyy.dir/Relation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yyyyyy.dir/Relation.cpp.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yt129\Desktop\yyyyyy\Relation.cpp -o CMakeFiles\yyyyyy.dir\Relation.cpp.s
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\Relation.cpp" -o CMakeFiles\yyyyyy.dir\Relation.cpp.s
 
 CMakeFiles/yyyyyy.dir/Relation.cpp.obj.requires:
 
@@ -222,7 +222,7 @@ yyyyyy.exe: CMakeFiles/yyyyyy.dir/build.make
 yyyyyy.exe: CMakeFiles/yyyyyy.dir/linklibs.rsp
 yyyyyy.exe: CMakeFiles/yyyyyy.dir/objects1.rsp
 yyyyyy.exe: CMakeFiles/yyyyyy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\yt129\Desktop\yyyyyy\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable yyyyyy.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable yyyyyy.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\yyyyyy.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -244,6 +244,6 @@ CMakeFiles/yyyyyy.dir/clean:
 .PHONY : CMakeFiles/yyyyyy.dir/clean
 
 CMakeFiles/yyyyyy.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\yt129\Desktop\yyyyyy C:\Users\yt129\Desktop\yyyyyy C:\Users\yt129\Desktop\yyyyyy\cmake-build-debug C:\Users\yt129\Desktop\yyyyyy\cmake-build-debug C:\Users\yt129\Desktop\yyyyyy\cmake-build-debug\CMakeFiles\yyyyyy.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy" "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy" "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\cmake-build-debug" "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\cmake-build-debug" "D:\0codes\MyCods\data structures 2017\201712shixi\yyyyyy\cmake-build-debug\CMakeFiles\yyyyyy.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/yyyyyy.dir/depend
 
