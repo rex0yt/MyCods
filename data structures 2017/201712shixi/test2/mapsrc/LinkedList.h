@@ -5,25 +5,23 @@
 using namespace std;
 
 template<typename Type>
-struct DoubleLinkNode//双向链表节点
+struct DoubleLinkNode
 {
     Type data;
     DoubleLinkNode<Type>* lLink;
     DoubleLinkNode<Type>* rLink;
-//      没有元素信息的默认构造函数
+
     DoubleLinkNode(DoubleLinkNode<Type>* pre=NULL,DoubleLinkNode<Type>*suc=NULL)
     {
         lLink=pre;
         rLink=suc;
     }
-//      带有元素信息的构造函数
     DoubleLinkNode(const Type& elem, DoubleLinkNode<Type>* pre=NULL,DoubleLinkNode<Type>* suc=NULL)
     {
         data=elem;
         lLink=pre;
         rLink=suc;
     }
-//    重载输出函数
     friend ostream& operator<<(ostream& os,DoubleLinkNode<Type>& node)
     {
         os << node.data;
@@ -33,18 +31,17 @@ struct DoubleLinkNode//双向链表节点
 
 
 template<typename Type>
-class DoubleLinkedList//双向链表类
+class DoubleLinkedList
 {
 private:
-    DoubleLinkNode<Type> head;//指向链表的头指针
+    DoubleLinkNode<Type> head;
     int length;
 public:
-    DoubleLinkedList():length(0)//默认构造函数 初始化链表
+    DoubleLinkedList():length(0)
     {
         head.lLink = NULL;
         head.rLink = NULL;
     }
-//    通过Type类型的数组初始化构造双向链表
     DoubleLinkedList(vector<Type>& typeArray)
     {
         int len = typeArray.size();
@@ -62,7 +59,7 @@ public:
             tmp = tmp->rLink;
         }
     }
-    void MakeEmpty()//使链表为空
+    void MakeEmpty()
     {
         DoubleLinkNode<Type>* del = head.rLink;
         DoubleLinkNode<Type>* tmp = del->rLink;
@@ -73,12 +70,11 @@ public:
             tmp = tmp->rLink;
         }
     }
-    ~DoubleLinkedList()//析构函数
+    ~DoubleLinkedList()
     {
         MakeEmpty();
         head.lLink=head.rLink=NULL;
     }
-//    所有数据输出到vector中，等待保存
     bool Output(vector<Type>& personArray)
     {
         personArray.clear();
@@ -92,7 +88,6 @@ public:
         }
         return true;
     }
-//    将所有信息打印到屏幕上
     bool Output()
     {
         DoubleLinkNode<Type> *pnt = &head;
@@ -103,8 +98,7 @@ public:
         }
         return true;
     }
-//    根据No编号搜索个人信息
-    DoubleLinkNode<Type>* SearchNo(PersonNo &thisNo)
+    DoubleLinkNode<Type>* SearchNo(int thisNo)
     {
         DoubleLinkNode<Type> *pnt = head.rLink;
         while(pnt != NULL)
@@ -115,7 +109,7 @@ public:
         }
         return NULL;
     }
-//    插入一个新的元素
+
     bool PushBack(Type& data)
     {
         DoubleLinkNode<Type>* pnt = &head;

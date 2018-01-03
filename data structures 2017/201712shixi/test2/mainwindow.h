@@ -6,8 +6,6 @@
 #include <QLayout>
 #include <QWidget>
 #include "mapsrc/Person.h"
-#include "mapsrc/PersonNo.h"
-#include "mapsrc/PersonInfo.h"
 #include "mapsrc/Relation.h"
 #include "mapsrc/IO.h"
 #include "mapsrc/LinkedList.h"
@@ -19,7 +17,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    QString getinfo(int i1,int i2);
+    QString getRelation(int i1,int i2);
+    Person getPersonInfo(int no);
 
 private slots:
     void LianXiRenChaxun();
@@ -47,11 +46,11 @@ private:
     QLabel *text3;
     QGridLayout *mainLayout;
     //图信息
-    Map<PersonNo, Relation> *thisMap;
+    Map<int> *thisMap;
     string path;
     vector<Person> personArray;
     vector<Relation> relationArray;
-    vector<PersonNo> personNoArray;
+    vector<int> personNoArray;
     IO *dataIO;
     DoubleLinkedList<Person> *thisList;
 };

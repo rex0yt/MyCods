@@ -3,23 +3,36 @@
 
 using namespace std;
 #include <iostream>
-#include "PersonNo.h"
-#include "PersonInfo.h"
 
 class Person
 {
 private:
-    PersonNo no;
-    PersonInfo info;
+    int no;
+    string name;
+    string sex;
+    string degree;
+    string job;
+    string office;
+    string telephone;
 public:
     Person() {}
     Person(int _no):no(_no){}
-    Person(PersonNo no,PersonInfo info):no(no),info(info) {}
-    friend istream& operator>>(istream& is, Person& onePerson);
-    friend ostream& operator<<(ostream& os, Person& onePerson);
-    PersonNo getNo();
-
+    int getNo() {return no;}
+    string getName() {return name;}
+    friend istream& operator>>(istream& is, Person& onePerson)
+    {
+        is >> onePerson.no >> onePerson.name >> onePerson.sex >>
+                onePerson.degree >> onePerson.job >> onePerson.office
+                >>onePerson.telephone;
+        return is;
+    }
+    friend ostream& operator<<(ostream& os, Person& onePerson)
+    {
+        os <<onePerson.no <<" " <<onePerson.name <<" " <<onePerson.sex
+          <<" " <<onePerson.degree <<" " <<onePerson.job <<" "
+         <<onePerson.office <<" " <<onePerson.telephone <<endl;
+        return os;
+    }
 };
-
 
 #endif // PERSON_H_INCLUDED
