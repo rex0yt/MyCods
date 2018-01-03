@@ -51,7 +51,7 @@
     <string>联系人编号2：</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButton_xiugai">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -89,7 +89,7 @@
     <string>退出</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="textEdit_per1">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -99,7 +99,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_2">
+  <widget class="QTextEdit" name="textEdit_per2">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -128,7 +128,7 @@
     <string>联系人的亲密值：</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_3">
+  <widget class="QTextEdit" name="textEdit_qinmi">
    <property name="geometry">
     <rect>
      <x>230</x>

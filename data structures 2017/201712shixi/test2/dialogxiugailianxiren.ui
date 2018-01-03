@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QTextEdit" name="textEdit_4">
+  <widget class="QTextEdit" name="textEdit_other2">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -99,7 +99,7 @@
     <string>其他信息1：</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_2">
+  <widget class="QTextEdit" name="textEdit_name">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -109,7 +109,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_chaxun">
+  <widget class="QPushButton" name="pushButton_add">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -128,7 +128,7 @@
     <string>新增</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_3">
+  <widget class="QTextEdit" name="textEdit_other1">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -157,7 +157,7 @@
     <string>其他信息2：</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="textEdit_bianhao">
    <property name="geometry">
     <rect>
      <x>170</x>
@@ -167,7 +167,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_chaxun_2">
+  <widget class="QPushButton" name="pushButton_delete">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -186,7 +186,7 @@
     <string>删除</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_chaxun_3">
+  <widget class="QPushButton" name="pushButton_update">
    <property name="geometry">
     <rect>
      <x>30</x>

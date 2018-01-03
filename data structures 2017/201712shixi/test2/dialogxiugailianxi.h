@@ -17,6 +17,9 @@ public:
 
 private:
   Ui::DialogXiugaiLianxi *ui;
+  int info1;
+  int info2;
+  int qinmi;
 };
 
 #endif // DIALOGXIUGAILIANXI_H

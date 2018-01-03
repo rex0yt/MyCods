@@ -17,6 +17,10 @@ public:
 
 private:
   Ui::DialogXiugaiLianxiren *ui;
+  int personNo;
+  QString name;
+  QString other1;
+  QString other2;
 };
 
 #endif // DIALOGXIUGAILIANXIREN_H

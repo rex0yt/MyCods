@@ -29,18 +29,35 @@ SOURCES += \
     dialogchaxunlianxiren.cpp \
     dialogchaxunlianxi.cpp \
     dialogxiugailianxiren.cpp \
-    dialogxiugailianxi.cpp
+    dialogxiugailianxi.cpp \
+    mapsrc/IO.cpp \
+    mapsrc/Person.cpp \
+    mapsrc/PersonInfocpp.cpp \
+    mapsrc/PersonNo.cpp \
+    mapsrc/Relation.cpp \
+    showallrelation.cpp
 
 HEADERS += \
         mainwindow.h \
     dialogchaxunlianxiren.h \
     dialogchaxunlianxi.h \
     dialogxiugailianxiren.h \
-    dialogxiugailianxi.h
+    dialogxiugailianxi.h \
+    mapsrc/IO.h \
+    mapsrc/LinkedList.h \
+    mapsrc/Map.h \
+    mapsrc/Person.h \
+    mapsrc/PersonInfo.h \
+    mapsrc/PersonNo.h \
+    mapsrc/Relation.h \
+    showallrelation.h
 
 FORMS += \
     dialogchaxunlianxiren.ui \
     dialogchaxunlianxi.ui \
-    dialogxiugailianxiren.ui \
-    dialogxiugailianxi.ui
+    dialogxiugailianxi.ui \
+    showallrelation.ui \
+    dialogxiugailianxiren.ui
+
+DISTFILES +=
 

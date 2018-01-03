@@ -127,7 +127,7 @@
     <string>其他信息2：</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="textEdit_bianhao">
    <property name="geometry">
     <rect>
      <x>190</x>
@@ -137,7 +137,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_2">
+  <widget class="QTextEdit" name="textEdit_name">
    <property name="geometry">
     <rect>
      <x>190</x>
@@ -147,7 +147,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_3">
+  <widget class="QTextEdit" name="textEdit_other1">
    <property name="geometry">
     <rect>
      <x>190</x>
@@ -157,7 +157,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_4">
+  <widget class="QTextEdit" name="textEdit_other2">
    <property name="geometry">
     <rect>
      <x>190</x>
