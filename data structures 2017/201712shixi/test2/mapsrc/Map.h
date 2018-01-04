@@ -44,12 +44,13 @@ public:
   int numEdges;//边的数量
   int maxVertices;//最多顶点数量
 public:
-  int getVertexPos(const V vertex);//取某个顶点的编号
+  int getVertexPos(const V vertex);//取某个顶点的编号 -1表示不存在
   Map();//默认构造函数
   Map(vector<V> &vArray, vector<Relation> &eArray);//根据顶点和边生成图
   ~Map();//析构函数：删除一个链接表
   V getValue(int i);//根据顶点的编号返回顶点信息
   int getWeight(int v1,int v2);//函数返回边(v1,v2)上的权值，若该边不在图中，则函数返回权值0
+  bool setWeight(int v1,int v2, int weight);//修改原来边的权值 不存在返回false
   vector<int> getAllRelation(int v1);//返回所有相邻边的
   bool insertVertex(const V&vertex);//在图的顶点表中插入一个新顶点vertex。若插入成功，函数返回true，否则false
   bool insertEdge(int v1, int v2, int cost);//在带权图中插入一条边（v1，v2），若此边存在或参数不合理，函数返回flase，否则true
@@ -166,6 +167,32 @@ int Map<V>::getWeight(int v1, int v2)
   return 0;
 }
 
+template <class V>
+bool Map<V>::setWeight(int v1,int v2, int weight)
+{
+  Edge<V> *pnt = NodeTable[v1].adj;
+  while(pnt != NULL)
+    {
+      if(pnt->dest == v2)
+        {
+          pnt->cost = weight;
+          break;
+        }
+      pnt = pnt->link;
+    }
+  pnt = NodeTable[v2].adj;
+  while(pnt != NULL)
+    {
+      if(pnt->dest == v1)
+        {
+          pnt->cost = weight;
+          break;
+        }
+      pnt = pnt->link;
+    }
+  return true;
+}
+
 template<class V>
 vector<int> Map<V>::getAllRelation(int v1)
 {
@@ -193,26 +220,24 @@ bool Map<V>::insertVertex(const V& vertex)
 template <class V>
 bool Map<V>::removeVertex(int v)
 {
-  if(numVertices==1||v<0||v>=numVertices)
+  if(numVertices==1 || v<0 || v>=numVertices)//判断顶点的合法性
     return false;
-  Edge<V> *p,*s,*t;
-  int i,k;
+  Edge<V> *p,*s,*tmp;
+  int k;
   while(NodeTable[v].adj!= NULL)
     {
-      p = NodeTable[v].adj;
-      k = p->dest;
-      s = NodeTable[k].adj;
-      t = NULL;
-      while(s!= NULL&&s->dest!=v)
+      p = NodeTable[v].adj; k = p->dest;
+      s = NodeTable[k].adj; tmp = NULL;
+      while(s!= NULL && s->dest!=v)
         {
-          t = s;
+          tmp = s;
           s = s->link;
         }
       if(s!= NULL)
         {
-          if(t==NULL)
+          if(tmp==NULL)
             NodeTable[k].adj = s->link;
-          else t->link = s->link;
+          else tmp->link = s->link;
           delete s;
         }
       NodeTable[v].adj = p->link;
@@ -232,6 +257,7 @@ bool Map<V>::removeVertex(int v)
             break;
           }
         else s = s->link;
+      p = p->link;
     }
   return true;
 }
@@ -261,7 +287,7 @@ template <class V>
 bool Map<V>::insertEdge(Relation oneRela)
 {
   if(this->insertEdge(this->getVertexPos(oneRela.getPer1()),
-         this->getVertexPos(oneRela.getPer2()),oneRela.getWeight()))
+                      this->getVertexPos(oneRela.getPer2()),oneRela.getWeight()))
     return true;
   return false;
 }

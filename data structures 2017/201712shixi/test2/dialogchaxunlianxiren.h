@@ -24,8 +24,11 @@ private:
   Ui::DialogChaxunLianxiren *ui;
   int personNo;
   QString name;
-  QString other1;
-  QString other2;
+  QString sex;
+  QString degree;
+  QString job;
+  QString office;
+  QString telephone;
 
   void getTextNo();
   void setTextPerson(Person onePerson);

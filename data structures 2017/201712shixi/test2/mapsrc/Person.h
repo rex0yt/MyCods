@@ -19,6 +19,18 @@ public:
     Person(int _no):no(_no){}
     int getNo() {return no;}
     string getName() {return name;}
+    string getSex() {return sex;}
+    string getDegree() {return degree;}
+    string getJob() {return job;}
+    string getOffice() {return office;}
+    string getTelephone() {return telephone;}
+    void setNo(int _no) {this->no=_no;}
+    void setName(string name) {this->name=name;}
+    void setSex(string sex) {this->sex=sex;}
+    void setDegree(string degree) {this->degree=degree;}
+    void setJob(string job) {this->job=job;}
+    void setOffice(string office) {this->office=office;}
+    void setTelephone(string tele) {this->telephone=tele;}
     friend istream& operator>>(istream& is, Person& onePerson)
     {
         is >> onePerson.no >> onePerson.name >> onePerson.sex >>

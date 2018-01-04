@@ -17,8 +17,16 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    QString getRelation(int i1,int i2);
-    Person getPersonInfo(int no);
+    ///////////以下是槽函数//////////////////////
+    QString getRelation(int i1,int i2);//查询关系对话框中查询关系
+    Person getPersonInfo(int no);//联系人查询对话框中通过编号查询联系人信息
+    bool isNoExist(int no);//联系人修改对话框中判断编号是否存在
+    bool toUpdatePerson(Person info);//修改联系人信息
+    bool toAddPerson(Person info);//传出Person以增加联系人
+    bool toDeletePerson(Person info);//传出Person以删除联系人
+    int toGetRelation(int no1,int no2);//查询亲密度的值
+    bool toUpdateRelation(int no1,int no2,int relation);//更新亲密度的值
+    vector<Person> getallPerson();//返回所有联系人的编号
 
 private slots:
     void LianXiRenChaxun();
