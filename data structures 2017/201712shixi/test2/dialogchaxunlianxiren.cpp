@@ -8,6 +8,7 @@ DialogChaxunLianxiren::DialogChaxunLianxiren(QWidget *parent) :
     ui(new Ui::DialogChaxunLianxiren)
 {
     ui->setupUi(this);
+    setWindowTitle(tr("联系人信息查询界面："));
 }
 
 DialogChaxunLianxiren::~DialogChaxunLianxiren()
@@ -34,19 +35,19 @@ void DialogChaxunLianxiren::getTextNo()
 
 void DialogChaxunLianxiren::setTextPerson(Person onePerson)
 {
-  this->name = QString::fromLocal8Bit(onePerson.getName().data(),100);
-  this->sex = QString::fromLocal8Bit(onePerson.getSex().data(),100);
-  this->degree = QString::fromLocal8Bit(onePerson.getDegree().data(),100);
-  this->job = QString::fromLocal8Bit(onePerson.getJob().data(),100);
-  this->office = QString::fromLocal8Bit(onePerson.getOffice().data(),100);
-  this->telephone = QString::fromLocal8Bit(onePerson.getTelephone().data(),100);
+    this->name = QString::fromLocal8Bit(onePerson.getName().data(),100);
+    this->sex = QString::fromLocal8Bit(onePerson.getSex().data(),100);
+    this->degree = QString::fromLocal8Bit(onePerson.getDegree().data(),100);
+    this->job = QString::fromLocal8Bit(onePerson.getJob().data(),100);
+    this->office = QString::fromLocal8Bit(onePerson.getOffice().data(),100);
+    this->telephone = QString::fromLocal8Bit(onePerson.getTelephone().data(),100);
 
-   this->ui->textEdit_name->setText(this->name);
-  this->ui->textEdit_sex->setText(this->sex);
-  this->ui->textEdit_degree->setText(this->degree);
-  this->ui->textEdit_job->setText(this->job);
-  this->ui->textEdit_office->setText(this->office);
-  this->ui->textEdit_telephone->setText(this->telephone);
+    this->ui->textEdit_name->setText(this->name);
+    this->ui->textEdit_sex->setText(this->sex);
+    this->ui->textEdit_degree->setText(this->degree);
+    this->ui->textEdit_job->setText(this->job);
+    this->ui->textEdit_office->setText(this->office);
+    this->ui->textEdit_telephone->setText(this->telephone);
 }
 
 void DialogChaxunLianxiren::on_pushButton_chaxun_clicked()

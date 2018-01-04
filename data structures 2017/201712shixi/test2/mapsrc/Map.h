@@ -51,7 +51,7 @@ public:
   V getValue(int i);//根据顶点的编号返回顶点信息
   int getWeight(int v1,int v2);//函数返回边(v1,v2)上的权值，若该边不在图中，则函数返回权值0
   bool setWeight(int v1,int v2, int weight);//修改原来边的权值 不存在返回false
-  vector<int> getAllRelation(int v1);//返回所有相邻边的
+  vector<Relation> getAllRelation(int v1);//返回所有相邻边的
   bool insertVertex(const V&vertex);//在图的顶点表中插入一个新顶点vertex。若插入成功，函数返回true，否则false
   bool insertEdge(int v1, int v2, int cost);//在带权图中插入一条边（v1，v2），若此边存在或参数不合理，函数返回flase，否则true
   bool insertEdge(Relation oneRela);//插入一条边
@@ -194,14 +194,15 @@ bool Map<V>::setWeight(int v1,int v2, int weight)
 }
 
 template<class V>
-vector<int> Map<V>::getAllRelation(int v1)
+vector<Relation> Map<V>::getAllRelation(int v1)
 {
-  vector<int> ans;
+  vector<Relation> ans;
   Edge<V> *pnt = NodeTable[v1].adj;
   while(pnt != NULL)
     {
       int vertex = this->getValue(pnt->dest);
-      ans.push_back(vertex);
+      int weight = pnt->cost;
+      ans.push_back(Relation(getValue(v1),vertex,weight));
       pnt = pnt->link;
     }
   return ans;

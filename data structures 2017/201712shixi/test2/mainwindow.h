@@ -18,7 +18,8 @@ public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
     ///////////以下是槽函数//////////////////////
-    QString getRelation(int i1,int i2);//查询关系对话框中查询关系
+//    QString getRelation(int i1,int i2);//查询关系对话框中查询关系
+    vector<Relation> getOneAllRelation(int no);//返回一个人的所有联系人
     Person getPersonInfo(int no);//联系人查询对话框中通过编号查询联系人信息
     bool isNoExist(int no);//联系人修改对话框中判断编号是否存在
     bool toUpdatePerson(Person info);//修改联系人信息

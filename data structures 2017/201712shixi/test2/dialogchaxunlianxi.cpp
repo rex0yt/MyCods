@@ -4,13 +4,15 @@
 #include <QMessageBox>
 #include <QPushButton>
 #include <sstream>
+#include <vector>
 
 DialogChaxunLianxi::DialogChaxunLianxi(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DialogChaxunLianxi)
 {
     ui->setupUi(this);
-    connect(ui->pushButton_query,SIGNAL(clicked()),this,SLOT(on_pushButton_query_clicked()));
+    setWindowTitle(tr("关系查询界面："));
+    //    connect(ui->pushButton_query,SIGNAL(clicked()),this,SLOT(on_pushButton_query_clicked()));
 }
 
 DialogChaxunLianxi::~DialogChaxunLianxi()
@@ -50,6 +52,30 @@ bool DialogChaxunLianxi::getTextEdit()
 
 void DialogChaxunLianxi::on_pushButton_query_clicked()
 {
-    this->getTextEdit();
-    this->ui->textBrowser->setPlainText(QString(getRelation(info1,info2)));
+    //    this->getTextEdit();
+    getTextEdit();
+    if(info2 == 0)//查询一个人所有的联系
+    {
+        std::vector<Relation> thisRelation = getOneAllRelation(info1);
+        Relation relaArray[1000];
+        for(unsigned int i=0; i<thisRelation.size(); i++)
+        {
+            relaArray[i] = thisRelation[i];
+        }
+        std::sort(relaArray,relaArray+thisRelation.size());//快速排序方法
+        QString ans;
+        for(unsigned int i=0; i<thisRelation.size(); i++)
+        {
+            ans.append(QString::number(relaArray[i].getPer2()));
+            ans.append("(");
+            ans.append(QString::number(relaArray[i].getWeight()));
+            ans.append(") ");
+        }
+        this->ui->textBrowser->setPlainText(ans);
+    }
+    else//查询两个人的关系值
+    {
+        int rela = getRelation(info1,info2);
+        this->ui->textBrowser->setPlainText(QString::number(rela));
+    }
 }

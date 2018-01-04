@@ -16,6 +16,12 @@ public:
     int getPer1() {return per1;}
     int getPer2() {return per2;}
     int getWeight() {return weight;}
+    friend bool operator <(Relation& r1, Relation& r2)
+    {
+        if(r1.getWeight() < r2.getWeight())
+            return true;
+        return false;
+    }
     friend istream& operator>>(istream& is, Relation& rela)//重载输入函数
     {
         is >> rela.per1 >> rela.per2 >> rela.weight;

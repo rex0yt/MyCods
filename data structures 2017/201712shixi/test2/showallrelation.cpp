@@ -7,7 +7,7 @@ ShowAllRelation::ShowAllRelation(QWidget *parent) :
   ui(new Ui::ShowAllRelation)
 {
   ui->setupUi(this);
-
+    setWindowTitle(tr("社交关系图："));
 }
 
 void ShowAllRelation::showThisRealtion()
@@ -30,7 +30,8 @@ void ShowAllRelation::showThisRealtion()
     {
       for(int j=1; j<=num; j++)
         {
-          ui->tableWidget->setItem(i,j,new QTableWidgetItem(this->getRelation(allPerson[i-1].getNo(),allPerson[j-1].getNo())));
+          int rela = this->getRelation(allPerson[i-1].getNo(),allPerson[j-1].getNo());
+          ui->tableWidget->setItem(i,j,new QTableWidgetItem(QString::number(rela)));
         }
     }
 }

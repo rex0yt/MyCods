@@ -9,6 +9,7 @@ DialogXiugaiLianxiren::DialogXiugaiLianxiren(QWidget *parent) :
   ui(new Ui::DialogXiugaiLianxiren)
 {
   ui->setupUi(this);
+  setWindowTitle(tr("联系人信息修改界面："));
 }
 
 DialogXiugaiLianxiren::~DialogXiugaiLianxiren()

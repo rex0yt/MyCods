@@ -8,6 +8,7 @@ DialogXiugaiLianxi::DialogXiugaiLianxi(QWidget *parent) :
   ui(new Ui::DialogXiugaiLianxi)
 {
   ui->setupUi(this);
+  setWindowTitle(tr("关系修改界面："));
 }
 
 DialogXiugaiLianxi::~DialogXiugaiLianxi()

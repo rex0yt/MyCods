@@ -2,6 +2,8 @@
 #define DIALOGCHAXUNLIANXI_H
 
 #include <QDialog>
+#include <vector>
+#include "mapsrc/Relation.h"
 
 namespace Ui {
   class DialogChaxunLianxi;
@@ -16,7 +18,9 @@ public:
   ~DialogChaxunLianxi();
 
 signals:
-  QString getRelation(int info, int info2=0);
+  int getRelation(int info, int info2=0);//返回两个人之间的关系
+  std::vector<Relation> getOneAllRelation(int no);//返回一个人的所有联系人
+
 
 private slots:
   void on_pushButton_query_clicked();

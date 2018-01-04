@@ -20,7 +20,7 @@ public:
 
 signals:
   vector<Person> getallPerson();
-  QString getRelation(int no1,int no2);
+  int getRelation(int no1,int no2);
   Person getInfo(int no);
 
 private:
