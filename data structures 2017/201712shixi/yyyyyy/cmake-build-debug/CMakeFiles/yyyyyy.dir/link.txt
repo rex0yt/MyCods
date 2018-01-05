@@ -1,3 +1,0 @@
-C:\Users\Rex\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\173.4127.32\bin\cmake\bin\cmake.exe -E remove -f CMakeFiles\yyyyyy.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\yyyyyy.dir/objects.a @CMakeFiles\yyyyyy.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\yyyyyy.dir/objects.a -Wl,--no-whole-archive  -o yyyyyy.exe -Wl,--out-implib,libyyyyyy.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\yyyyyy.dir\linklibs.rsp

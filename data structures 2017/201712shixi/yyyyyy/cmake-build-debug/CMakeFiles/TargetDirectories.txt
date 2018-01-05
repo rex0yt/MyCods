@@ -1,3 +1,0 @@
-D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/cmake-build-debug/CMakeFiles/yyyyyy.dir
-D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/0codes/MyCods/data structures 2017/201712shixi/yyyyyy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
